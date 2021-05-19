@@ -12,5 +12,7 @@
     "@types/node": "^15.3.0",
     "typescript": "^4.2.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "threads": "^1.6.4"
+  }
 }
