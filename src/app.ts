@@ -1,18 +1,15 @@
 import workerThreads from 'worker_threads'
 import os from 'os'
-import calculatePermutation from './calculate-permutation';
+import sleep from './sleep';
 
 
 
 (() => {
-    let numbers: number[] = [];
-    for (let i = 1; i < 100; i++) numbers.push(i);
-
-    let startTime = Date.now().valueOf()
-    for (let number of numbers) {
-        console.log(calculatePermutation(number));
+    let startTime = Date.now()
+    for (let i = 1; i < 5; i++) {
+        sleep(1000);
     }
-    let endTime = Date.now().valueOf()
+    let endTime = Date.now()
 
-    console.log('Used: ', endTime - startTime);
+    console.log('Used: ', endTime - startTime, 'milli-seconds');
 })();
