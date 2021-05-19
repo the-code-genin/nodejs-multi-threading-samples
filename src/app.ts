@@ -10,7 +10,7 @@ import path from 'path';
         let startTime = Date.now();
 
         let secondsArray: number[] = [];
-        for (let i = 1; i <= 10; i++) secondsArray.push(i * 1000);
+        for (let i = 1; i <= 20; i++) secondsArray.push(i * 1000);
 
         // for (let cpu of os.cpus()) {
         //     let worker = new Worker(path.resolve(__dirname, 'app.ts'));
@@ -19,7 +19,7 @@ import path from 'path';
         for (let seconds of secondsArray) console.log(await sleep());
 
         let endTime = Date.now();
-        console.log('Used: ', endTime - startTime, 'milli-seconds');
+        console.log('Used:', (endTime - startTime) / 1000, 'seconds');
     } else {
 
     }
