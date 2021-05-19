@@ -13,6 +13,7 @@
     "typescript": "^4.2.4"
   },
   "dependencies": {
-    "threads": "^1.6.4"
+    "threads": "^1.6.4",
+    "ts-node": "^9.1.1"
   }
 }
