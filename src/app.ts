@@ -4,12 +4,12 @@ import sleep from './sleep';
 
 
 
-(() => {
-    let startTime = Date.now()
-    for (let i = 1; i < 5; i++) {
-        sleep(1000);
+(async () => {
+    let startTime = Date.now();
+    for (let i = 1; i <= 5; i++) {
+        await sleep(1000);
     }
-    let endTime = Date.now()
+    let endTime = Date.now();
 
     console.log('Used: ', endTime - startTime, 'milli-seconds');
 })();
