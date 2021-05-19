@@ -7,7 +7,7 @@ import sleep from './sleep';
 (async () => {
     let startTime = Date.now();
     for (let i = 1; i <= 5; i++) {
-        await sleep(1000);
+        console.log(await sleep(1000));
     }
     let endTime = Date.now();
 
