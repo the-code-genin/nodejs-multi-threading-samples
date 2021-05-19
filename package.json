@@ -1,0 +1,11 @@
+{
+  "name": "nodejs-multithreading-sample",
+  "version": "1.0.0",
+  "description": "Practice using nodejs for multithreading",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "Mohammed Adekunle <adekunle3317@gmail.com>",
+  "license": "ISC"
+}
