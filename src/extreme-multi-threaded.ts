@@ -10,7 +10,7 @@ import { ObservablePromise } from 'threads/dist/observable-promise';
 
     // Parse seconds array
     let secondsArray: number[] = [];
-    for (let i = 1; i <= 20; i++) secondsArray.push(i);
+    for (let i = 1; i <= 100; i++) secondsArray.push(i);
 
 
     // Calculate no of threads to spawn based on number of CPUs
