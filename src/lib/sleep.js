@@ -1,4 +1,4 @@
-export default function sleep(): Promise<string> {
+module.exports = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(Date.now().toString());
