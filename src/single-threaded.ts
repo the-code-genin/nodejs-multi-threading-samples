@@ -5,7 +5,7 @@ import sleep from './lib/sleep';
     let startTime = Date.now();
 
     let secondsArray: number[] = [];
-    for (let i = 1; i <= 100; i++) secondsArray.push(i);
+    for (let i = 1; i <= 160; i++) secondsArray.push(i);
 
     for (let seconds of secondsArray) console.log(await sleep());
 
